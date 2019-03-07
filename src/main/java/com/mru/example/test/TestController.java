@@ -20,7 +20,7 @@ public class TestController {
 		         System.out.println(inputField[i] + " ");
 		         
 		         
-		         if (inputField[i] <= '3') {
+		         if (inputField[i] <= '3' /*acii implicit conversion*/) {
 		        	 char swap = inputField[i+1];
 		        	 inputField[i+1] = inputField[i];
 		        	 inputField[i] = swap;
@@ -39,6 +39,7 @@ public class TestController {
 	        	  digit = digit *2;
 	          }
 	          
+			  //imlicit conversion from int to String and appended then
 	          inputFiels2.append(digit);
 	         
 	    }
